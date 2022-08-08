@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css2.css')}}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>profile</title>
+</head>
+<body>
+    <center>
+    <p>Your profile! - Chat App Logged in as {{name}}, <a href="{{url_for('unlogger')}}">click here to logout</a></p>
+    <br>
+    <br>
+    <h3 style="margin:0;display:inline">User:  </h3>
+    <h3 style="margin: 20px;;display:inline;" id="the_username">{{name}}</h3>
+    <br>
+    <p>Type your message here:</p>
+    <form action="">
+        <textarea class="small" name="new_message" id="the_message" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Send" id="new_message">
+    </form>
+    <textarea name="" id="chat_window" cols="30" rows="10"></textarea>
+</center>
+
+</body>
+</html>
