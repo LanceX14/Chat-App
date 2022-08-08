@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+    <title>Register Page</title>
+{% endblock %}
+
+{% block body %}
+<form action="" method="post">
+    <p>Register - Chat App</p>
+    <div>
+    <p style="display: inline;">Username:</p>
+    <input class = "form_input " type="text" name="new_user_name" >
+    </div>
+    <div>
+        <p style="display: inline;">Email:</p>
+        <input class = "form_input " type="email" name="email" >
+        </div>
+    <div>
+    <p style="display: inline;">Password:</p>
+    <input class = "form_input " type="password" name="new_password">
+    </div>
+    <div>
+        <p style="display: inline;">Retype Password:</p>
+        <input class = "form_input " type="password" name="confirmed_password">
+        </div>
+    <br>
+    <div>
+
+        <a href="{{ url_for('register_controller') }}"><button>Register</button></a>
+
+
+    <!-- <input class = "but" type="submit" value="Register"> -->
+
+        
+
+    </div>
+</form>
+{% endblock %}
