@@ -1,4 +1,4 @@
-# Chat-App
+# The-Funny-Chat-App
 ## Introduction
 Chat App is a website that users can register and then login their accounts and share one public chatting window.
 
